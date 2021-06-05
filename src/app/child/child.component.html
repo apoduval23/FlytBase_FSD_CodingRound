@@ -1,0 +1,8 @@
+
+  <div class="box-position" 
+  [style.top.px]="top" 
+  [style.left.px]="left"
+  [ngStyle]="{'z-index':90+unique_key}"
+  [ngClass]="{'selectedColorBorder': isBoxSelected}"
+  (click)="selectBox()">
+  </div>
