@@ -111,12 +111,12 @@ export class ParentComponent {
 
   remove_me() {
     // if (this.VCR.length < 1 || this.selectedUniqueKey) return;
-
+    
     let componentRef = this.componentsReferences.filter(
       x => x.instance.unique_key == this.selectedUniqueKey
     )[0];
-    let vcrIndex: number = this.VCR.indexOf(componentRef as any);
-
+    
+    let vcrIndex: number = this.VCR.indexOf(componentRef.hostView);
     // removing component from container
     this.VCR.remove(vcrIndex);
 
@@ -155,7 +155,7 @@ export class ParentComponent {
     }
   }
 
-  toggleListioners() {
+  toggleListeners() {
     this.toggleListenersValue = !this.toggleListenersValue;
   }
 }

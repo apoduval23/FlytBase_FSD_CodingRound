@@ -1,32 +1,27 @@
 <div #parent class="parent">
-  <div #viewContainerRef></div>
-</div>
-<div>
-<!-- <label class="switch">
-  <input type="checkbox" (click)="toggleListioners()">
-  <span class="slider round"></span>
-  
-</label> -->
-<button type="button" class="add_listn" (click)="toggleListeners()">Toggle Listeners</button>
-
-<button type="button" class="add_btn"(click)="createComponent()">
-   ADD
-</button>
-<button type="button" class="delete_btn"(click)="remove_me()">
-   REMOVE
-</button>
-</div>
-<div >
-<button type="button" class="top_btn"(click)="moveBox('T')">
-   TOP
-</button>
-<button type="button" class="left_btn" (click)="moveBox('L')">
-    LEFT
-</button>
-<button type="button" class="right_btn" (click)="moveBox('R')">
-   RIGHT
-</button>
-<button type="button" class="bottom_btn" (click)="moveBox('D')">
-   BOTTOM
-</button>
-</div>
+   <div #viewContainerRef></div>
+ </div>
+ <div>
+ <button type="button" class="add_listn" (click)="toggleListeners()">Toggle Listeners</button>
+ 
+ <button type="button" class="add_btn"(click)="createComponent()">
+    Add
+ </button>
+ <button type="button" class="delete_btn"(click)="remove_me()">
+    Remove
+ </button>
+ </div>
+ <div >
+ <button type="button" class="top_btn"(click)="moveBox('T')">
+    Top
+ </button>
+ <button type="button" class="left_btn" (click)="moveBox('L')">
+     Left
+ </button>
+ <button type="button" class="right_btn" (click)="moveBox('R')">
+    Right
+ </button>
+ <button type="button" class="bottom_btn" (click)="moveBox('D')">
+    Bottom
+ </button>
+ </div>
