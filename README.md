@@ -18,6 +18,9 @@ Bonus Task:
 ● Create a hardcoded custom rectangular fence and ensure all the boxes stay within the
 fence during movement
 
+/*Ensure Local Env. supports Angular 12*/
+
 Steps to build and run project on localhost:
 ● Enter folder with package.json, and run "npm i".
 ● Run project using "ng serve".
+
